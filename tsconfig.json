@@ -1,6 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "saas-ui": ["components/index.ts"],
+      "saas-ui/esm/*": ["components/*"],
+      "saas-ui/lib/*": ["components/*"]
+    },
     "target": "esnext",
     "module": "commonjs",
     "jsx": "react",
@@ -13,5 +18,5 @@
     "resolveJsonModule": true
   },
   "include": ["components", "global.d.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["components/**/demo", "components/**/__tests__"]
 }

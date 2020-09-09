@@ -1,0 +1,5 @@
+components/**/demo/*.tsx
+components/**/tests/*.tsx
+demo
+test
+dist
